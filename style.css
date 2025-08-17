@@ -1,0 +1,46 @@
+/* Global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.brand-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+/* Hero section */
+.hero {
+  height: 100vh;
+  background: url('https://picsum.photos/1920/1080?grayscale') center/cover no-repeat;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Accent button */
+.btn-accent {
+  background-color: #c9a9a6;
+  color: #fff;
+  border: none;
+}
+
+.btn-accent:hover {
+  background-color: #b28f8c;
+  color: #fff;
+}
